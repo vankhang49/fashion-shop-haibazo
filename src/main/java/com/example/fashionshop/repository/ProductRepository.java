@@ -19,7 +19,8 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
             "JOIN pricings pr ON p.product_id = pr.product_id " +
             "JOIN colors co ON pr.color_id = co.color_id " +
             "JOIN sizes si ON pr.size_id = si.size_id " +
-            "WHERE p.product_name LIKE %:nameSearch% " +
+            "WHERE p.enabled = 1 " +
+            "AND p.product_name LIKE %:nameSearch% " +
             "AND c.category_name LIKE %:categoryName% " +
             "AND s.style_name LIKE %:styleName% " +
             "AND co.color_name LIKE %:colorName% " +

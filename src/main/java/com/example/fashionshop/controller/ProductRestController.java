@@ -41,13 +41,13 @@ public class ProductRestController {
         List<Sort.Order> orders = new ArrayList<>();
             switch (nameSort.toLowerCase()) {
                 case "datecreate":
-                    orders.add(createSortOrder("dateCreate", sortDirection));
+                    orders.add(createSortOrder("date_create", sortDirection));
                     break;
                 case "price":
                     orders.add(createSortOrder("pr.price", sortDirection));
                     break;
                 default:
-                    orders.add(createSortOrder("dateCreate", "desc"));
+                    orders.add(createSortOrder("date_create", "desc"));
             }
 
         System.out.println("nameSearch(" + nameSearch + ")" + "categoryName(" + categoryName + ")" + "styleName(" + styleName + ")" );
