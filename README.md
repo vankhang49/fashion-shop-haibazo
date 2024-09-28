@@ -3,7 +3,7 @@
 fashion-shop-api
 ﻿
 
-GET http://localhost:8080/api/public/products?pageSize=&nameSearch=&categoryName=&styleName=&colorName=&size=&priceBefore=&priceAfter=&nameSort=price&sortDirection=
+GET http://localhost:8080/api/public/products?pageSize=&nameSearch=&categoryName=&styleName=&colorName=&size=&priceBefore=&priceAfter=&nameSort=&sortDirection=
 
 Calling API gets a list of products in Slice format, adds filtering by fields and sorting by price and date added.
 _Slice: pageSize default 12
